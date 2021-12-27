@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.root{
+    @apply bg-red-600 w-40
+}

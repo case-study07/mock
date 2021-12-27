@@ -430,9 +430,3 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden {
   display: none;
 }
-
-.root {
-  width: 10rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
