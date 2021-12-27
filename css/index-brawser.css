@@ -431,6 +431,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.header-bar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 105 105 / var(--tw-bg-opacity));
+}
+
 .root {
   width: 10rem;
   --tw-bg-opacity: 1;
