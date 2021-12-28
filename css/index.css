@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Layout css */
 .headerColor{
     @apply bg-header-color
 }
@@ -12,7 +15,6 @@
     @apply text-white text-2xl font-bold;
 }
 
-
 /* headerナビゲーション */
 .headerNav{
     @apply w-2/5 ;
@@ -23,3 +25,13 @@
 .headerNav > ul > li{
     @apply text-white text-xl;
 }
+
+/* footerタグにつけること */
+.mainRoot{
+    @apply bg-main-color w-11/12 m-auto rounded-3xl mb-10 mt-8;
+}
+.footerBar{
+    @apply bg-footer-color text-center p-8
+}
+
+/* LayoutCSSはここまで */

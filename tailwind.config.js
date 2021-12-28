@@ -4,8 +4,9 @@ module.exports = {
     extend: {
       colors: {
         "header-color": "#F26969",
+        "footer-color": "#FFB9B9",
+        "main-color": "#E8E7E3",
       },
-
     },
   },
   plugins: [],
