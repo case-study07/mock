@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-bar{
+    @apply bg-header-color
+}
+h1{
+    @apply text-white
+}
+nav img{
+    @apply w-48
+}
+main{
+    @apply border
+}
+.pankuzu{
+    @apply flex
+}
+.carName{
+    @apply flex justify-center text-4xl
+}
+.carImage{
+    @apply w-full
+}
+.carOthers{
+    @apply flex justify-between
+}
+.carImage img{
+    @apply w-4/5
+}
+.auctionAndAmount{
+    @apply flex justify-around
+}
+.auctionAndAmount{
+    border: 1px solid red;
+}
+.auctionAndAmount div{
+    @apply w-2/5
+}
+.auctionAndAmount dt{
+    @apply text-4xl
+
+}
+.auctionAndAmount div{
+    border: 1px solid blue;
+}
+.auctionAndAmount img{
+    @apply w-full
+}
+h3{
+    @apply flex justify-around text-2xl
+}

@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="widdt=device-widdt, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cardetail-brawser.css">
     <title>HALMOTORトップページ</title>
   </head>
   <body>
-    <header>
+    <header class="header-bar">
       <h1>HALMOTOR</h1>
       <nav>
         <ul>
@@ -22,7 +23,7 @@
     <!-- ここまでヘッダー -->
     <nav>
       <div>
-        <img src="./img/icon.jpeg" alt="アイコン画像" />
+        <img src="../img/icon.jpeg" alt="アイコン画像" />
         <p>ようこそ〇〇様</p>
       </div>
       <input type="text" /><button>Search</button>
@@ -70,24 +71,31 @@
       </ul>
     </nav>
     <main>
-      <article>
+      <article class="pankuzu">
         <p><a href="./index.html">Top>></a></p>
         <p>出品詳細</p>
       </article>
       <article>
-          <h2>日産スカイライン 3.0 GT タイプSP</h2>
+          <h2 class="carName">日産スカイライン 3.0 GT タイプSP</h2>
         <div>
-          <img src="./img/Featured image.png" alt="" />
-          <img src="./img/Featured image.png" alt="" />
-          <img src="./img/Featured image.png" alt="" />
-          <img src="./img/Featured image.png" alt="" />
-          <img src="./img/Featured image.png" alt="" />
+          <img class="carImage" src="../img/Featured image.png" alt="" />
+          <div class="carOthers">
+            <img src="../img/Featured image.png" alt="" />
+            <img src="../img/Featured image.png" alt="" />
+            <img src="../img/Featured image.png" alt="" />
+            <img src="../img/Featured image.png" alt="" />
+          </div>
         </div>
-        <div>
-            <h2>出品オークション</h2>
-            <a href=""><img src="./img/86label.png" alt="オークションラベル"></a>
-            <p>初期金額 3,780,000</p>
-        </div>
+        <dl class="auctionAndAmount">
+          <div>
+            <dt>出品オークション</dt>
+            <dd><a href=""><img src="../img/86label.png" alt="オークションラベル"></a></dd>
+          </div>
+          <div>
+            <dt>初期金額</dt>
+            <dd>3,780,000</dd>
+          </div>
+        </dl>
         </article>
         <article>
             <h3>基本詳細</h3>
