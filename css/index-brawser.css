@@ -431,13 +431,45 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.header-bar {
+.headerColor {
   --tw-bg-opacity: 1;
   background-color: rgb(242 105 105 / var(--tw-bg-opacity));
 }
 
-.root {
-  width: 10rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+/* header 記述*/
+
+.headerBar {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 6rem;
+  width: 83.333333%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerBar h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* headerナビゲーション */
+
+.headerNav {
+  width: 40%;
+}
+
+.headerNav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerNav > ul > li {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
