@@ -1,11 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.header-bar{
+.headerColor{
     @apply bg-header-color
 }
+/* header 記述*/
+.headerBar{
+    @apply  flex justify-between h-24 items-center w-5/6 mx-auto;
+}
+.headerBar h1 {
+    @apply text-white text-2xl font-bold;
+}
 
-.root{
-    @apply bg-red-600 w-40 
+
+/* headerナビゲーション */
+.headerNav{
+    @apply w-2/5 ;
+}
+.headerNav > ul{
+    @apply flex justify-between;
+}
+.headerNav > ul > li{
+    @apply text-white text-xl;
 }
