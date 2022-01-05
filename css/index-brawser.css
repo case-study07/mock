@@ -431,6 +431,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+/* Layout css */
+
 .headerColor {
   --tw-bg-opacity: 1;
   background-color: rgb(242 105 105 / var(--tw-bg-opacity));
@@ -473,3 +475,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+/* footerタグにつけること */
+
+.mainRoot {
+  margin: auto;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  width: 91.666667%;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 231 227 / var(--tw-bg-opacity));
+}
+
+.footerBar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 185 185 / var(--tw-bg-opacity));
+  padding: 2rem;
+  text-align: center;
+}
+
+/* LayoutCSSはここまで */
