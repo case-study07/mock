@@ -2,29 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-.header-bar{
+/* Layout css */
+.headerColor{
     @apply bg-header-color
 }
+/* header 記述*/
+.headerBar{
+    @apply  flex justify-between h-24 items-center w-5/6 mx-auto;
+}
+.headerBar h1 {
+    @apply text-white text-2xl font-bold;
+}
+
+/* headerナビゲーション */
+.headerNav{
+    @apply w-2/5 ;
+}
+.headerNav > ul{
+    @apply flex justify-between;
+}
+.headerNav > ul > li{
+    @apply text-white text-xl;
+}
+
+/* footerタグにつけること */
+.mainRoot{
+    @apply bg-main-color w-11/12 m-auto rounded-3xl mb-10 mt-8;
+}
+.footerBar{
+    @apply bg-footer-color text-center p-8
+}
+
+/* LayoutCSSはここまで */
 h1{
     @apply text-white
 }
 nav img{
     @apply w-48
 }
-main{
-    @apply border
+.carDetail{
+    @apply bg-white mx-auto
+}
+.carDetail{
+    width: 95%;
 }
 .pankuzu{
-    @apply flex
+    @apply flex text-2xl ml-10  pt-5 mb-12
 }
 .carName{
-    @apply flex justify-center text-4xl
+    @apply flex justify-center text-4xl mb-8
 }
 .carImage{
-    @apply w-full
+    @apply w-full mb-5
 }
 .carOthers{
-    @apply flex justify-between
+    @apply flex justify-between mb-12
 }
 .carImage img{
     @apply w-4/5
@@ -42,11 +74,17 @@ main{
     @apply text-4xl
 
 }
-.auctionAndAmount div{
-    border: 1px solid blue;
-}
 .auctionAndAmount img{
     @apply w-full
+}
+.auctionAndAmount div:nth-of-type(2) dd{
+    @apply text-center mt-12
+}
+.auctionAndAmount dd{
+    @apply text-4xl
+}
+.dl dt{
+    @apply bg-amber-500 float-left 
 }
 h3{
     @apply flex justify-around text-2xl
