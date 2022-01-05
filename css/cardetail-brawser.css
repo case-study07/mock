@@ -423,11 +423,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-*, ::before, ::after {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
 .table {
   display: table;
 }
@@ -436,10 +431,71 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.header-bar {
+/* Layout css */
+
+.headerColor {
   --tw-bg-opacity: 1;
   background-color: rgb(242 105 105 / var(--tw-bg-opacity));
 }
+
+/* header 記述*/
+
+.headerBar {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 6rem;
+  width: 83.333333%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerBar h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* headerナビゲーション */
+
+.headerNav {
+  width: 40%;
+}
+
+.headerNav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerNav > ul > li {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* footerタグにつけること */
+
+.mainRoot {
+  margin: auto;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  width: 91.666667%;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 231 227 / var(--tw-bg-opacity));
+}
+
+.footerBar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 185 185 / var(--tw-bg-opacity));
+  padding: 2rem;
+  text-align: center;
+}
+
+/* LayoutCSSはここまで */
 
 h1 {
   --tw-text-opacity: 1;
@@ -450,15 +506,25 @@ nav img {
   width: 12rem;
 }
 
-main {
-  border-width: 1px;
+.carDetail {
+  margin-left: auto;
+  margin-right: auto;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  width: 95%;
 }
 
 .pankuzu {
+  margin-left: 2.5rem;
+  margin-bottom: 3rem;
   display: flex;
+  padding-top: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .carName {
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   font-size: 2.25rem;
@@ -466,10 +532,12 @@ main {
 }
 
 .carImage {
+  margin-bottom: 1.25rem;
   width: 100%;
 }
 
 .carOthers {
+  margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
 }
@@ -493,12 +561,24 @@ main {
   line-height: 2.5rem;
 }
 
-.auctionAndAmount div{
-  border: 1px solid blue;
-}
-
 .auctionAndAmount img {
   width: 100%;
+}
+
+.auctionAndAmount div:nth-of-type(2) dd {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.auctionAndAmount dd {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.dl dt {
+  float: left;
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
 h3 {
