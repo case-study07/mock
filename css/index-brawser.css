@@ -423,6 +423,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+*, ::before, ::after {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .table {
   display: table;
 }
@@ -461,7 +466,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* headerナビゲーション */
 
 .headerNav {
-  width: 40%;
+  width: 60%;
 }
 
 .headerNav > ul {
@@ -480,12 +485,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mainRoot {
   margin: auto;
-  margin-bottom: 2.5rem;
   margin-top: 2rem;
+  margin-bottom: 2.5rem;
   width: 91.666667%;
   border-radius: 1.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(232 231 227 / var(--tw-bg-opacity));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .footerBar {
@@ -496,3 +505,128 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 /* LayoutCSSはここまで */
+
+/* mainHeaders */
+
+.mainHeaders {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+/* searchBar */
+
+.searchBar {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto;
+  width: 91.666667%;
+}
+
+.searchBar input {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-right: 2rem;
+  height: 4rem;
+  width: 66.666667%;
+  border-radius: 0.75rem;
+}
+
+.searchBar button {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  height: 3.5rem;
+  width: 20%;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* searchItems */
+
+.searchItems {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 91.666667%;
+  justify-content: space-around;
+}
+
+.searchItems > ul {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+.auctionLabel{
+  display:flex;
+  flex-flow: column;
+}
+
+.auctionLabel div {
+  order: 2;
+  display: flex;
+}
+
+.auctionLabel>a {
+  order: 3;
+  text-align: right;
+}
+
+.auctionLabel>h2 {
+  order: 1;
+}
+
+.carDetailCard {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+/* carDetailCardの例あると */
+
+.carDetailLabel {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.carDetailCard {
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding: 0.5rem;
+}
+
+table, tr, td {
+  border-collapse: collapse;
+  padding: 10px;
+  text-align:center
+}
+
+.pager {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 91.666667%;
+  justify-content: space-between;
+}
