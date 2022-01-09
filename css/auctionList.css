@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 /* Layout css */
 .headerColor{
     @apply bg-header-color
@@ -36,6 +37,7 @@
 
 /* LayoutCSSはここまで */
 
+
 /* mainHeaders */
 .mainHeaders{
     @apply grid grid-cols-12 grid-rows-2
@@ -63,42 +65,7 @@
 /* mainHeaders ここまで*/
 
 
-/* auctionLabel */
-.auctionLabel{
-    display:flex;
-    flex-flow: column;
-}
-.auctionLabel div{
-    @apply flex order-2
-}
-.auctionLabel>a{
-    @apply order-3 text-right;
-    
-}
-.auctionLabel>h2{
-    @apply order-1
-}
-/* auctionLabel ここまで */
-
-.carDetailCard{
-    @apply bg-white 
-}
-
-
-
-/* carDetailCardの例あると */
-.carDetailLabel{
-    @apply py-4  bg-white my-5
-}
-.carDetailCard {
-    @apply  border-solid border-2 border-gray-300 rounded-lg p-2 m-2
-}
-
-table, tr, td {
-    border-collapse: collapse;
-    padding: 10px;
-    text-align:center
-}
-.pager{
-    @apply flex justify-between w-11/12 mx-auto
+/* 要編集必要 */
+img{
+    @apply  w-2/3 m-auto;
 }
