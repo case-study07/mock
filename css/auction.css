@@ -1,3 +1,161 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Layout css */
+.headerColor{
+    @apply bg-header-color
+}
+/* header 記述*/
+.headerBar{
+    @apply  flex justify-between h-24 items-center w-5/6 mx-auto;
+}
+.headerBar h1 {
+    @apply text-white text-2xl font-bold;
+}
+
+/* headerナビゲーション */
+.headerNav{
+    @apply w-2/5 ;
+}
+.headerNav > ul{
+    @apply flex justify-between;
+}
+.headerNav > ul > li{
+    @apply text-white text-xl;
+}
+
+/* footerタグにつけること */
+.mainRoot{
+    @apply bg-main-color w-11/12 m-auto rounded-3xl mb-10 mt-8 pt-8 pb-8;
+}
+.footerBar{
+    @apply bg-footer-color text-center p-8
+}
+
+/* mainHeaders */
+.mainHeaders{
+    @apply grid grid-cols-12 grid-rows-2
+}
+
+/* searchBar */
+
+.searchBar{
+    @apply col-start-1 col-end-13 row-start-1 row-end-2 w-11/12 m-auto;
+}
+.searchBar input{
+    @apply   rounded-xl w-4/6 h-16 mr-8 my-10 ;
+}
+.searchBar button{
+    @apply   bg-black text-white rounded-xl  w-1/5 h-14 mx-3 my-10 ;
+}
+/* searchItems */
+.searchItems{
+    @apply w-11/12  mx-auto my-4 justify-around col-start-1 col-end-13 row-start-2 row-end-3 ;
+}
+.searchItems > ul{
+    @apply  flex justify-around bg-white rounded-xl p-4 ;
+}
+
+/* mainHeaders ここまで*/
+
+/* LayoutCSSはここまで */
+
+.pankuzu{
+    @apply flex gap-2 text-2xl ml-10  pt-5 mb-12
+}
+a{
+    @apply underline text-link-color
+}
+
+.auction{
+    @apply bg-white mx-auto pb-8
+}
+.auction{
+    width: 95%;
+}
+.auction h2{
+    @apply  text-4xl border-b-2 w-11/12 mx-auto text-center pb-5 font-bold
+}
+.auctionInfo .schedule{
+    @apply ml-10
+}
+.auctionInfo .carName{
+    @apply text-4xl flex justify-around pt-40 pb-10
+}
+
+
+
+.carImage > img{
+    width: 100%;
+}
+.carImage div{
+    @apply flex justify-between mt-8
+}
+.carImage div img{
+    @apply w-1/5
+}
+
+.bid{
+    @apply flex justify-around
+}
+.bid>div{
+    border: solid 1px red;
+}
+.bid >div:nth-child(1){
+    width: 60%;
+}
+.bid >div:nth-child(2){
+    width: 30%;
+}
+
+.bid >div:nth-child(2) dl{
+    @apply flex justify-between
+}
+.bid >div:nth-child(2) dl div{
+    width: 45%;
+}
+.bid >div:nth-child(2) dl div{
+    @apply border-2
+}
+.bid >div:nth-child(2) dl dd:first-of-type{
+    @apply text-center text-2xl
+}
+.bidForm{
+    @apply bg-main-color flex items-end
+}
+
+
+
+/* 基本情報 */
+.basic h2{
+    @apply flex justify-around text-2xl mt-8
+}
+.tables{
+    @apply w-full flex justify-around items-start
+}
+.tables{
+    
+    /* display: flex; */
+}
+table{
+    width: 40%;
+}
+tr{
+    @apply border-b-2
+}
+tr{
+    /* border-bottom: solid 2px black; */
+    /* padding-top: 10px; */
+    /* background-color: aquamarine; */
+}
+th{
+    @apply text-lg
+}
+td{
+    @apply text-sm
+}
+th,td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
