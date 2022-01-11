@@ -423,6 +423,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+*, ::before, ::after {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .table {
   display: table;
 }
@@ -495,15 +500,79 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
+/* mainHeaders */
+
+.mainHeaders {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+/* searchBar */
+
+.searchBar {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto;
+  width: 91.666667%;
+}
+
+.searchBar input {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-right: 2rem;
+  height: 4rem;
+  width: 66.666667%;
+  border-radius: 0.75rem;
+}
+
+.searchBar button {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  height: 3.5rem;
+  width: 20%;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* searchItems */
+
+.searchItems {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 91.666667%;
+  justify-content: space-around;
+}
+
+.searchItems > ul {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+/* mainHeaders ここまで*/
+
 /* LayoutCSSはここまで */
 
 h1 {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-nav img {
-  width: 12rem;
 }
 
 .carDetail {
@@ -518,9 +587,17 @@ nav img {
   margin-left: 2.5rem;
   margin-bottom: 3rem;
   display: flex;
+  gap: 0.5rem;
   padding-top: 1.25rem;
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+a {
+  --tw-text-opacity: 1;
+  color: rgb(74 110 239 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .carName {
@@ -549,7 +626,6 @@ nav img {
 .auctionAndAmount {
   display: flex;
   justify-content: space-around;
-  border: 1px solid red;
 }
 
 .auctionAndAmount div {
@@ -577,13 +653,46 @@ nav img {
 
 .dl dt {
   float: left;
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
 h3 {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.tables {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-around;
+  /* display: flex; */
+}
+
+table{
+  width: 40%;
+}
+
+tr {
+  border-bottom-width: 2px;
+  /* border-bottom: solid 2px black; */
+  /* padding-top: 10px; */
+  /* background-color: aquamarine; */
+}
+
+th {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+td {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+th,td{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
