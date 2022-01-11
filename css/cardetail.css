@@ -33,12 +33,35 @@
     @apply bg-footer-color text-center p-8
 }
 
+/* mainHeaders */
+.mainHeaders{
+    @apply grid grid-cols-12 grid-rows-2
+}
+
+/* searchBar */
+
+.searchBar{
+    @apply col-start-1 col-end-13 row-start-1 row-end-2 w-11/12 m-auto;
+}
+.searchBar input{
+    @apply   rounded-xl w-4/6 h-16 mr-8 my-10 ;
+}
+.searchBar button{
+    @apply   bg-black text-white rounded-xl  w-1/5 h-14 mx-3 my-10 ;
+}
+/* searchItems */
+.searchItems{
+    @apply w-11/12  mx-auto my-4 justify-around col-start-1 col-end-13 row-start-2 row-end-3 ;
+}
+.searchItems > ul{
+    @apply  flex justify-around bg-white rounded-xl p-4 ;
+}
+
+/* mainHeaders ここまで*/
+
 /* LayoutCSSはここまで */
 h1{
     @apply text-white
-}
-nav img{
-    @apply w-48
 }
 .carDetail{
     @apply bg-white mx-auto
@@ -47,7 +70,10 @@ nav img{
     width: 95%;
 }
 .pankuzu{
-    @apply flex text-2xl ml-10  pt-5 mb-12
+    @apply flex gap-2 text-2xl ml-10  pt-5 mb-12
+}
+a{
+    @apply underline text-link-color
 }
 .carName{
     @apply flex justify-center text-4xl mb-8
@@ -65,7 +91,6 @@ nav img{
     @apply flex justify-around
 }
 .auctionAndAmount{
-    border: 1px solid red;
 }
 .auctionAndAmount div{
     @apply w-2/5
@@ -84,8 +109,36 @@ nav img{
     @apply text-4xl
 }
 .dl dt{
-    @apply bg-amber-500 float-left 
+    @apply float-left 
 }
 h3{
-    @apply flex justify-around text-2xl
+    @apply flex justify-around text-2xl mt-8
+}
+.tables{
+    @apply w-full flex justify-around items-start
+}
+.tables{
+    
+    /* display: flex; */
+}
+table{
+    width: 40%;
+}
+tr{
+    @apply border-b-2
+}
+tr{
+    /* border-bottom: solid 2px black; */
+    /* padding-top: 10px; */
+    /* background-color: aquamarine; */
+}
+th{
+    @apply text-lg
+}
+td{
+    @apply text-sm
+}
+th,td{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
