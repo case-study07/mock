@@ -96,6 +96,10 @@ a{
     @apply w-1/5
 }
 
+
+.rightColum{
+    @apply flex flex-col justify-between
+}
 .bid{
     @apply flex justify-around
 }
@@ -122,9 +126,20 @@ a{
     @apply text-center text-2xl
 }
 .bidForm{
-    @apply bg-main-color flex items-end
+    @apply bg-main-color flex flex-col h-3/4 items-center justify-around text-center
 }
-
+.bidForm div:first-child p:last-of-type{
+    @apply text-4xl
+}
+.bidForm div:nth-of-type(2){
+    @apply w-full h-1/5
+}
+.bidForm div:nth-of-type(2) input{
+    @apply w-1/2 h-3/5 rounded-xl
+}
+.bidForm div:nth-of-type(2) button{
+    @apply bg-black text-white w-1/3 h-3/5 rounded-xl
+}
 
 
 /* 基本情報 */
